@@ -26,9 +26,11 @@ def agregar(request):
 
             nombre = form.cleaned_data['nombre']
             apellido = form.cleaned_data['apellido']
+            sexo = form.cleaned_data['sexo']
             email = form.cleaned_data['email']
             fecha_nacimiento = form.cleaned_data['fecha_nacimiento']
-            Persona(nombre=nombre, apellido=apellido, email=email, fecha_nacimiento=fecha_nacimiento).save()
+            fono = form.cleaned_data['fono']
+            Persona(nombre=nombre, apellido=apellido, email=email, fecha_nacimiento=fecha_nacimiento, fono=fono).save()
 
             return HttpResponseRedirect("/familia/")
     elif request.method == "GET":

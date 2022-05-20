@@ -25,6 +25,7 @@
                 <th scope="col">Identificador</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
+                <th scope="col">Sexo</th>
                 <th scope="col">Email</th>
                 <th scope="col">Fecha Nacimiento</th>
                 <th scope="col">Acciones</th>
@@ -36,6 +37,7 @@
                     <th scope="row">{{p.id}} </th>
                     <td> {{p.nombre}} </td>
                     <td> {{p.apellido}} </td>
+                    <td> {{p.sexo}}</td>
                     <td> {{p.email}} </td>
                     <td> {{p.fecha_nacimiento}} </td>
                     {% url 'borrar' identificador=p.id as borrar_url %}
