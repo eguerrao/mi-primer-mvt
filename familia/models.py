@@ -8,4 +8,4 @@ class Persona(models.Model):
     sexo = models.CharField(max_length=10, default="Femenino")
     email = models.CharField(max_length=100)
     fecha_nacimiento = models.DateField()
-    fono = models.IntegerField(maxsize)
+    fono = models.IntegerField(default=0, blank=True, null=True)
