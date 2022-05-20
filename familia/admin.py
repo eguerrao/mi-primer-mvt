@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from familia.models import *
+
+#Registramos los modelos
+
+admin.site.register(Persona)
